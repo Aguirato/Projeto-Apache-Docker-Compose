@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  apache-web:
+    image: httpd:2.4
+    container_name: apache-web-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/usr/local/apache2/htdocs/
+    restart: unless-stopped
