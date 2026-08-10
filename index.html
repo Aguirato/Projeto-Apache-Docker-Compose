@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World - Apache no Docker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>🐳 Hello World!</h1>
+    <p>Aplicação HTML rodando em um Container Apache via Docker Compose</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Como isso funciona?</h2>
+      <p>
+        Este arquivo HTML é servido pelo <strong>Apache HTTP Server (httpd)</strong>,
+        rodando dentro de um container Docker, orquestrado através de um arquivo
+        <code>docker-compose.yml</code>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Status</h2>
+      <p id="status">Verificando...</p>
+      <button id="btn-check">Atualizar horário do servidor</button>
+    </section>
+
+    <section class="card">
+      <h2>Stack utilizada</h2>
+      <ul>
+        <li>Docker &amp; Docker Compose</li>
+        <li>Apache HTTP Server (httpd:2.4)</li>
+        <li>HTML5 + CSS3 + JavaScript</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Desenvolvido como projeto de portfólio 🚀</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
